@@ -1,0 +1,428 @@
+#body-layout {
+    background-color: transparent;
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "nav suite";
+}
+
+.google-suite {
+    background-color: transparent;
+    grid-area: suite;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 
+        60px 60px 60px 65px;
+    grid-template-areas: 
+        "gmail images apps user";
+    justify-content: end;
+    align-content: center;
+    padding-right: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+.google-suite a:visited {
+    color: #000;
+    opacity: 0.75;
+}
+.google-suite a {
+    text-decoration-line: none;
+}
+.google-suite a:visited {
+    text-decoration-line: none;
+}
+.google-suite a:hover {
+    text-decoration-line: underline;
+}
+
+.suite-gmail {
+    grid-area: gmail;
+    align-self: center;
+    justify-self: right;
+    padding-right: 5px;
+    margin-top: -5px;
+}
+
+.suite-images {
+    grid-area: images;
+    align-self: center;
+    justify-self: right;
+    padding-right: 0px;
+    margin-top: -5px;
+}
+
+.suite-apps {
+    grid-area: apps;
+    align-self: center;
+    justify-self: end;
+    margin-right: 5px;
+    margin-left: -5px;
+    padding-right: 15px;
+}
+.suite-apps img {
+    max-width: 15px;
+    height: 15px;
+    opacity: 0.75;
+}
+
+.suite-user {
+    background-color: transparent;
+    grid-area: user;
+    width: 100%;
+    padding: 0px;
+    max-width: 60px;
+}
+
+.about-store {
+    background-color: transparent;
+    grid-area: nav;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-areas: 
+    "about store";
+    align-items: center;
+    justify-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #000;
+    opacity: 0.75;
+    margin-left: 12px;
+    margin-top: -5px;
+}
+.about-store a:visited {
+    color: #000;
+    opacity: 0.75;
+}
+.about-store a:hover{
+    text-decoration: underline;
+}
+.about {
+    text-decoration-line: none;
+}
+.about a:visited{
+    text-decoration-line: none;
+}
+.store {
+    text-decoration-line: none;
+}
+.store a:visited {
+    text-decoration-line: none;
+}
+
+
+
+
+#landing-page {
+    background-color: white;
+    height: 77vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 
+        50% 20% 30%; 
+    justify-items: center;
+
+
+}
+
+#search-form-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: 
+        "searchbox searchbox"
+        "searchbutton searchlucky";
+    width: 70%;
+    max-width: 500px;
+    grid-column-gap: 13px;
+    background-color: transparent;
+    margin-top: -70px;
+}
+
+#footer {
+    background-color: rgb(243, 243, 243);
+    height: 13vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows:  53% 47%;
+    grid-template-areas: 
+        "bottom-country"
+        "bottom-footer";
+}
+
+#footer a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.bottom-country {
+    background-color: #F2F2F2;
+    margin: 0;
+    grid-area: bottom-country;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    opacity: 0.75;
+    text-align: left;
+    border-top: 1px solid #D2D2D2;   
+}
+
+.country-name {
+    padding-left: 30px;
+    padding-top: 13px;
+}
+
+.bottom-footer {
+    background-color: #F2F2F2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    opacity: 0.75;
+    display: grid;
+    grid-template-columns: repeat(
+        2, minmax(100px, 1fr));
+    grid-template-areas:
+        "leftbfooter rightbfooter";
+    border-top: 1px solid #D2D2D2;
+}
+
+.left-bfooter {
+    padding: 12px 30px;
+}
+
+.right-bfooter {
+    padding: 12px 30px;
+    justify-self: right;
+}
+
+.advertising {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    opacity: 0.75;
+    padding-right: 23px;
+}
+.advertising a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.business {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding-right: 23px;
+}
+.business a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.howsearch {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+}
+.howsearch a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.privacy {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding-left: 23px;
+}
+.privacy a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.terms {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding-left: 23px;
+}
+.terms a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.settings {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding-left: 23px;
+}
+.settings a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.center-logo {
+    align-self: end;
+    padding-bottom: 8vh;
+    max-width: 500px;
+    min-width: 150px;
+    width: 50vw;
+    
+}
+
+#search-box {
+    grid-area: searchbox;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-areas:
+    "magnifier search voice";
+}
+
+#search-box input {
+    border: transparent;
+    padding: 0;
+    margin: 0;
+    height: 42px;
+    width: 100%;
+    min-width: 300px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    grid-area: search;
+    align-self: center;
+    border-top: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+#search-box input:active {
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.magnifier {
+    background-color: transparent;
+    width: 100%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    height: 40px;
+    max-width: 40px;
+    grid-area: magnifier;
+    padding: 0;
+    justify-self: right;
+    align-self: center;
+    border-top: 1px solid #dfe1e5;
+    border-left: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+}
+ 
+
+.magnifier-icon {
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.voice {
+    background-color: transparent;
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    grid-area: voice;
+    padding: 0;
+    margin: 0;
+    justify-self: left;
+    align-self: center;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top: 1px solid #dfe1e5;
+    border-right: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+.voice-icon {
+    margin-top: 8px;
+    margin-left: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+#search-button {
+    grid-area: searchbutton;
+    justify-self: right;
+    margin-top: 20px;
+
+}
+#search-button input:hover {
+    box-shadow: 0px 1px 0.5px 0.3px #D2D2D2;
+    border: 1px solid #D2D2D2;
+    background-color: whitesmoke;
+}
+
+#search-lucky {
+    grid-area: searchlucky;
+    justify-self: left; 
+    margin-top: 20px;
+}
+#search-lucky input:hover {
+    box-shadow: 0px 1px 0.5px 0.3px #D2D2D2;
+    border: 1px solid #D2D2D2;
+    background-color: whitesmoke;
+}
+
+.search-button {
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 10px 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px ;
+    color: rgb(95, 93, 93);
+    border-radius: 3px;
+}
+
+.search-lucky {
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 10px 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px ;
+    color: rgb(95, 93, 93);
+    border-radius: 3px;
+}
+
+.travel {
+    align-self: center;
+    padding-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(5, 5, 95);
+}
+.travel a:visited {
+    text-decoration: none;
+}
