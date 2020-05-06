@@ -59,7 +59,7 @@
 
 #landing-page {
     background-color: white;
-    height: 75vh;
+    height: 77vh;
     width: 100%;
     display: grid;
     grid-template-rows: 
@@ -84,19 +84,143 @@
 }
 
 #footer {
-    background-color: rgb(231, 227, 227);
-    height: 15vh;
+    background-color: rgb(243, 243, 243);
+    height: 13vh;
     width: 100%;
-    
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows:  53% 47%;
+    grid-template-areas: 
+        "bottom-country"
+        "bottom-footer";
 }
 
+#footer a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.bottom-country {
+    background-color: #F2F2F2;
+    margin: 0;
+    grid-area: bottom-country;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    opacity: 0.75;
+    text-align: left;
+    border-top: 1px solid #D2D2D2;   
+}
+
+.country-name {
+    padding-left: 30px;
+    padding-top: 13px;
+}
+
+.bottom-footer {
+    background-color: #F2F2F2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    opacity: 0.75;
+    display: grid;
+    grid-template-columns: repeat(
+        2, minmax(100px, 1fr));
+    grid-template-areas:
+        "leftbfooter rightbfooter";
+    border-top: 1px solid #D2D2D2;
+}
+
+.left-bfooter {
+    padding: 12px 30px;
+}
+
+.right-bfooter {
+    padding: 12px 30px;
+    justify-self: right;
+}
+
+.advertising {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    opacity: 0.75;
+    padding-right: 23px;
+}
+.advertising a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.business {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding-right: 23px;
+}
+.business a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.howsearch {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+}
+.howsearch a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.privacy {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding-left: 23px;
+}
+.privacy a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.terms {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding-left: 23px;
+}
+.terms a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.settings {
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding-left: 23px;
+}
+.settings a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+}
 
 .center-logo {
     align-self: end;
     padding-bottom: 8vh;
-    max-width: 350px;
+    max-width: 500px;
     min-width: 150px;
-    width: 35vw;
+    width: 50vw;
     
 }
 
